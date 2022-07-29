@@ -21,6 +21,10 @@
   position: absolute;
 }
 
+.header .logo img {
+  height: 120px;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -161,6 +165,22 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .header .logo {
+    display: flex;
+    float: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+  }
+
+  .header .logo img {
+    height: 64px;
+
+  }
+
+
 }
 
 @media (prefers-color-scheme: dark) {

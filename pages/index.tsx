@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <header className={styles.header}>
         <span className={styles.logo}>
-          <picture><img src="/logo.png" alt="ConnorGlynn.com Logo" height={128} /></picture>
+          <picture><img src="/logo.png" alt="ConnorGlynn.com Logo"/></picture>
         </span>
 
         <nav className={styles.nav}>
