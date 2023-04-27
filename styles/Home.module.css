@@ -27,18 +27,19 @@
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  height: 130px;
+  width: fit-content;
+  float: right;
 }
 
 .nav a {
-    color: #999;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
+  color: #999;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
 }
 
 .section {
@@ -61,10 +62,10 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  padding: 2rem 0 2rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 75px;
 }
 
 .footer a {
@@ -151,13 +152,12 @@
 }
 
 .logo {
-  height: 1em;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .invert {
-  filter: invert(1)
+  filter: invert(1);
 }
 
 @media (max-width: 600px) {
@@ -177,18 +177,5 @@
 
   .header .logo img {
     height: 64px;
-
-  }
-
-
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
   }
 }
