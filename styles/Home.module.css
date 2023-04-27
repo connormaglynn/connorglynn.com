@@ -34,12 +34,12 @@
 }
 
 .nav a {
-    color: #999;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
+  color: #999;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
 }
 
 .section {
@@ -157,7 +157,7 @@
 }
 
 .invert {
-  filter: invert(1)
+  filter: invert(1);
 }
 
 @media (max-width: 600px) {
@@ -177,6 +177,5 @@
 
   .header .logo img {
     height: 64px;
-
   }
 }
