@@ -1,0 +1,23 @@
+name: 'Build NextJs'
+description: 'Build NextJs Project'
+inputs:
+  tagManagerId:
+    required: false
+    description: 'Google Tag Manager ID'
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: ./.github/actions/setup-nodejs
+    - uses: actions/cache@v3
+      with:
+        path: |
+          ~/.npm
+          ${{ github.workspace }}/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+    - run: npm run build
+      shell: sh
+      env:
+        NEXT_PUBLIC_GOOGLE_TAG_MANAGER_PROPERTY_ID: ${{ inputs.tagManagerId }}

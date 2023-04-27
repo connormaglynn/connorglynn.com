@@ -1,0 +1,17 @@
+name: 'Setup Node'
+description: 'Sets up NodeJs Environment'
+inputs:
+  node-version:
+    required: false
+    description: 'The version of Node to use'
+    default: '16'
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: npm
+    - run: npm ci
+      shell: sh
