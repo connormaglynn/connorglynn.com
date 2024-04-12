@@ -2,7 +2,7 @@
 title: 'Purpose Driven Design'
 excerpt: 'When building an application, have you ever wondered where to start? '
 date: '2024-03-10T12:00:00.000Z'
-status: 'DRAFT'
+status: 'RELEASED'
 ---
 
 I often find myself using [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) (TDD) while writing code.
