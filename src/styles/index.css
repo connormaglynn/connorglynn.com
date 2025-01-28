@@ -13,9 +13,8 @@ body {
 }
 
 a {
-  @apply text-accent-2 hover:text-accent-3 hover:cursor-pointer transition duration-150 ease-in-out no-underline hover:no-underline
+  @apply text-accent-2 hover:text-accent-3 hover:cursor-pointer transition duration-150 ease-in-out no-underline hover:no-underline;
 }
-
 
 /* prism-plus */
 pre {

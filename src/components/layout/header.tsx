@@ -20,9 +20,21 @@ const Header = () => {
       </Link>
 
       <nav className={styles.nav}>
-        <Link href="/#portfolio" className="text-accent-2 hover:text-accent-3 ">Portfolio</Link>
-        <Link href="/#about" className="text-accent-2 hover:text-accent-3 transition duration-150 ease-in-out">About</Link>
-        <Link href="/blog" className="text-accent-2 hover:text-accent-3 transition duration-150 ease-in-out">Blog</Link>
+        <Link href="/#portfolio" className="text-accent-2 hover:text-accent-3 ">
+          Portfolio
+        </Link>
+        <Link
+          href="/#about"
+          className="text-accent-2 hover:text-accent-3 transition duration-150 ease-in-out"
+        >
+          About
+        </Link>
+        <Link
+          href="/blog"
+          className="text-accent-2 hover:text-accent-3 transition duration-150 ease-in-out"
+        >
+          Blog
+        </Link>
       </nav>
     </div>
   )
