@@ -1,13 +1,13 @@
-name: 'Setup Node'
-description: 'Sets up NodeJs Environment'
+name: "Setup Node"
+description: "Sets up NodeJs Environment"
 inputs:
   node-version:
     required: false
-    description: 'The version of Node to use'
-    default: '16'
+    description: "The version of Node to use"
+    default: "20"
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - uses: actions/setup-node@v3
       with:
