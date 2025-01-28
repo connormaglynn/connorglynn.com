@@ -1,0 +1,8 @@
+.landing {
+  margin-top: -200px;
+  height: 900px;
+  width: 100%;
+  background: url(/logo-main.png);
+  background-size: cover;
+  background-position: center;
+}

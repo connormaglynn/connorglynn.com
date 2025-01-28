@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #041120;
+  font-family: 'Ubuntu', sans-serif;
+}
+.title {
+  text-align: center;
+  color: #c5c9c9;
+}
+
+a {
+  @apply text-accent-2 hover:text-accent-3 hover:cursor-pointer transition duration-150 ease-in-out no-underline hover:no-underline
+}
+
 
 /* prism-plus */
 pre {

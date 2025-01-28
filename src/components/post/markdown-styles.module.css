@@ -16,8 +16,3 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
-
-.markdown a {
-  color: #0017c2;
-  font-weight: bolder;
-}

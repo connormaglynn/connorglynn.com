@@ -1,13 +1,14 @@
 module.exports = {
-  content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  content: ['./src/**/*.tsx',],
   theme: {
     extend: {
       colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
+        'accent-1': '#999',
+        'accent-2': '#277822',
+        'accent-3': '#85ff00',
+      },
+      backgroundImage: {
+        'hero-image': 'url(/logo-main.png)',
       },
       spacing: {
         28: '7rem',

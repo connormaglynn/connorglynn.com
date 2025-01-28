@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { config } from './config'
 import { PostStatus } from '../interfaces/post'
 
-const postsDirectory = join(process.cwd(), '_posts')
+const postsDirectory = join(process.cwd(), 'src/_posts')
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
