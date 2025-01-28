@@ -3,8 +3,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/layout/layout'
 import Header from '../components/layout/header'
+import Hero from '../components/pages'
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       <Layout>
@@ -15,6 +16,8 @@ const Home: NextPage = () => {
         </Head>
 
         <Header />
+
+        <Hero />
 
         <div className={styles.container}>
           <main className={styles.main}>
@@ -83,4 +86,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default HomePage

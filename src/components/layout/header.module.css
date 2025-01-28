@@ -1,0 +1,39 @@
+.header .logo {
+  float: left;
+  position: absolute;
+}
+
+.header .logo img {
+  height: 120px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: fit-content;
+  float: right;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+@media (max-width: 600px) {
+  .header .logo {
+    display: flex;
+    float: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+  }
+
+  .header .logo img {
+    height: 64px;
+  }
+}
